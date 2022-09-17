@@ -1,5 +1,5 @@
 # Use NodeJS base image
-FROM node:13
+FROM sidahmedfaisal/simple-node:latest
 
 # Create app directory in Docker
 WORKDIR /usr/src/app
