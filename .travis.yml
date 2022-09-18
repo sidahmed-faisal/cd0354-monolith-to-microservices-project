@@ -15,4 +15,4 @@ before_install:
 install:
   - docker-compose -f docker-compose-build.yml build --parallel
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push sidahmedfaisal/udagram-reverseproxy
+  - docker push sidahmedfaisal/udagram-api-feed
