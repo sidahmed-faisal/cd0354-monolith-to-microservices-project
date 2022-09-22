@@ -34,7 +34,7 @@ before_script:
 script:
   - docker --version # print the version for logging
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
-  - docker tag udagram-reverseproxy sidahmedfaisal/reverseproxy:latest
+  - docker tag udagram-reverseproxy sidahmedfaisal/udagram-reverseproxy:latest
   - docker build -t udagram-api-user ./udagram-api-user
   - docker tag udagram-api-user sidahmedfaisal/udagram-api-user:latest
   - docker build -t udagram-api-feed ./udagram-api-feed
