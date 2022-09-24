@@ -13,6 +13,11 @@ spec:
         app: backend-feed
     spec:
       containers:
+      restartPolicy: Always
+      volumes:
+        - name: aws-secret
+          secret:
+            secretName: aws-secret
       - name: backend-feed
         image: sidahmedfaisal/udagram-api-feed
         ports:
